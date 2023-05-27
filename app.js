@@ -63,3 +63,8 @@ $searchForm.on("submit", event => {
         })
 
     });
+
+   
+    //// next steps - 1. figure out how to display more than 1 brewery at a time; use a scroll down function to display all results with a load more button
+    //// maybe try displaying the names only, enable click and once clicked the space on the right shows the details, (like having two columns) including the map 
+    /// figure out how to further filter the result by brewery type - bonus
