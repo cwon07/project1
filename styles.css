@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 body {
     background-image:url("images/Beerflight.jpeg");
     background-position: center;
@@ -14,43 +16,45 @@ body {
 
 .popup {
     background-color: white;
-    width: 420px;
-    padding: 30px 40px;
+    width: 600px;
+    height: 300px;
+    padding: 40px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
-    border-radius: 8px;
+    border-radius: 10px;
     display: none;
     text-align: center;
+    font-family: 'Alata', sans-serif;
 }
 
 .popup button {
     display: block;
-    width: 150px;
+    width: 100px;
     position: relative;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
-    background-color: #0f72e5;
+    background-color: white;
 	border-radius: 20px;
-    color: #ffffff;
+    color: black;
     text-decoration: none;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
 .popup h1 {
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
-a{
+a {
     display: block;
-    width: 150px;
+    width: 100px;
     position: relative;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
-    background-color: #0f72e5;
-		border-radius: 20px;
-    color: #ffffff;
+    background-color: white;
+	border-radius: 20px;
+    color: black;
     text-decoration: none;
-    padding: 8px 0;
+    padding: 10px 0;
 }
