@@ -11,19 +11,24 @@
     <script src="./app.js" defer></script>
 </head>
 <body>
-    <form class="search">
+    <div class="popup">
+        <h1>Are you over 21 of age?</h1>
+        <button id="close">YES</button>
+        <a href="https://www.google.ca/search?q=how+to+make+butterbeer&sxsrf=APwXEdfkQBFmVLJ_heiALFa4CRxFouMQFw%3A1685001126080&source=hp&ei=phNvZJPRAt2A0PEPycaA8AU&iflsig=AOEireoAAAAAZG8htlY5nTHgyeVhwGJ-p3NCxP0u3OnI&oq=how+to+make+butter+bee&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCAAQgAQQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIHCAAQgAQQCjIHCAAQgAQQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEIoFECc6BAgjECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoFCC4QgAQ6CwgAEIoFELEDEIMBOgsILhCKBRCxAxCDAToLCC4QgAQQsQMQgwE6CAguEIAEELEDOggIABCKBRCxAzoICC4QgAQQ1AI6CAgAEIAEELEDUABYqRlg-yRoAHAAeACAAU6IAaIKkgECMjKYAQCgAQE&sclient=gws-wiz">NO</a>
+    </div>
+    <form class="mainSearch">
         <input type="text" name="breweries" placeholder="Search breweries">
         <input type="submit" value="Search">
     </form>
-    <form class="random search">
+    <form class="randomSearch">
         <p>In the land of beer, there's a brewery waiting to be found.<br>
         Interested in what's out there? </p>
         <input type="submit" value="Look for Random Brewery">
     </form>
-    <div class="result">
+    <div class="mainResult">
                 <!-- this is the sub-section where we are going to see the search results by city-->
     </div>
-    <div class="random result">
+    <div class="randomResult">
                 <!-- this is the sub-section where we are going to see the random search result-->
     </div>
 </body>
