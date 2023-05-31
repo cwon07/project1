@@ -40,8 +40,38 @@ Deployed to Render.com
 
 ### Code Examples
 -----
-Examples of usage:
-WIP
+ $.ajax({
+        type: "GET",
+        url: `https://api.openbrewerydb.org/v1/breweries?by_city=${city}&per_page=50`,
+        })
+        .then((data) => {
+            console.log(data.length)
+       let list = ""; 
+        for(let i = 0; i < data.length; i ++) {
+            const item = data[i]
+            console.log(item.name, item.brewery_type, item.city, item.state, item.website_url)
+            list +=
+
+            `<li>
+            <div class = "brewery-list">
+                <div>
+                    <b>Name:&nbsp; </b> ${item.name}
+                </div>
+                <div>
+                    <b>Brewery Type:&nbsp; </b> ${item.brewery_type}
+                </div>
+                <div>
+                    <b>City:&nbsp; </b> ${item.city}
+                </div>
+                <div>
+                    <b>State:&nbsp; </b> ${item.state}
+                </div>
+                <div>
+                    <b>Website:&nbsp; </b> ${item.website_url}
+                </div>
+            </div>
+            </li>`;
+        };          
 
 ### Status
 -----
@@ -69,6 +99,14 @@ WIP
 ### Inspiration
 -----
 Calling all beer enthusiasts! I came across [Open Brewery Database API](https://www.openbrewerydb.org/) and was reminded of the brewery crawls I did in Portland way back when I was chidlless and free(jk prob going to remove this line). There are so many great breweries out there that are so unique and awesome but don't get caught in people's radar, so I wanted to build an app to make curated lists of breweries based on the location. Looking forward to using the app with friends!
+
+
+### Installation Instructions
+-----
+
+### Difficulties
+-----
+
 
 ### Contact 
 -----

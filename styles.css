@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
 
 body {
     background-image:url("images/Beerflight.jpeg");
@@ -48,7 +50,24 @@ body {
     margin-top: 20px;
 }
 
-a {
+body > h1 {
+    margin: 50px;
+    font-family: 'Mate SC', serif;
+    color: white;
+    size: 300px;
+}
+
+body > p {
+    margin: 50px;
+    font-family: 'Alata', sans-serif;
+    color: white;
+}
+
+.mainSearch {
+    margin: 50px;
+}
+
+body > a {
     display: block;
     width: 100px;
     position: relative;
@@ -59,4 +78,46 @@ a {
     color: black;
     text-decoration: none;
     padding: 10px 0;
+}
+
+.mainResult > li {
+    list-style-type: none;
+    display: block;
+}
+
+.brewery-list {
+    margin: 20px;
+
+}
+
+button {
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background-color:bisque;
+    color: brown;
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color .3s, color .3s;
+
+
+}
+
+button:hover {
+    background-color: brown;
+    color: white;
+}
+
+.list-container {
+    width: 60%;
+    background-color: white;
+    border: 3px solid brown;
+    margin: auto;
+    
+}
+
+.list-container .square {
+    background-color: black;
+    width: 200px;
+    height: 200px;
 }
