@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewery Finder</title>
+    <title>Craft - Brewery Finder</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/Beer-favicon.png" />
     <link rel="stylesheet" href="./styles.css">
     <script src="./app.js" defer></script>
 </head>
 <body>
+    <header><img src="images/sitelogo.png"></header>
     <div class="popup">
         <h1>Are you over 21 of age?</h1>
         <button id="close">YES</button>
-        <a href="https://www.google.ca/search?q=how+to+make+butterbeer&sxsrf=APwXEdfkQBFmVLJ_heiALFa4CRxFouMQFw%3A1685001126080&source=hp&ei=phNvZJPRAt2A0PEPycaA8AU&iflsig=AOEireoAAAAAZG8htlY5nTHgyeVhwGJ-p3NCxP0u3OnI&oq=how+to+make+butter+bee&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCAAQgAQQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIHCAAQgAQQCjIHCAAQgAQQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEIoFECc6BAgjECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoFCC4QgAQ6CwgAEIoFELEDEIMBOgsILhCKBRCxAxCDAToLCC4QgAQQsQMQgwE6CAguEIAEELEDOggIABCKBRCxAzoICC4QgAQQ1AI6CAgAEIAEELEDUABYqRlg-yRoAHAAeACAAU6IAaIKkgECMjKYAQCgAQE&sclient=gws-wiz">NO</a>
+        <button id="no"><a href="https://www.google.ca/search?q=how+to+make+butterbeer&sxsrf=APwXEdfkQBFmVLJ_heiALFa4CRxFouMQFw%3A1685001126080&source=hp&ei=phNvZJPRAt2A0PEPycaA8AU&iflsig=AOEireoAAAAAZG8htlY5nTHgyeVhwGJ-p3NCxP0u3OnI&oq=how+to+make+butter+bee&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCAAQgAQQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIHCAAQgAQQCjIHCAAQgAQQCjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEIoFECc6BAgjECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoFCC4QgAQ6CwgAEIoFELEDEIMBOgsILhCKBRCxAxCDAToLCC4QgAQQsQMQgwE6CAguEIAEELEDOggIABCKBRCxAzoICC4QgAQQ1AI6CAgAEIAEELEDUABYqRlg-yRoAHAAeACAAU6IAaIKkgECMjKYAQCgAQE&sclient=gws-wiz">NO</a></button>
     </div>
-    <h1>Brewery Finder</h1>
-    <p>Find local breweries in your city.</p>
+    <p>Find your local breweries here.</p>
     <form class="mainSearch">
-        <label for="city">City:</label>
         <input type="text" name="city" placeholder="Type in your city name" id="city" required>
         <button type="submit">Search</button>
     </form>
     <div class="mainResult">
-        <ul class="list"></ul>
-            <!-- <div class="list-container"></div> -->
-                <!-- this is the sub-section where we are going to see the search results by city-->
+        <ul class="list">
+        </ul>
     </div>
 </body>
 </html>

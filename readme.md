@@ -98,7 +98,7 @@ Deployed to Render.com
 
 ### Inspiration
 -----
-Calling all beer enthusiasts! I came across [Open Brewery Database API](https://www.openbrewerydb.org/) and was reminded of the brewery crawls I did in Portland way back when I was chidlless and free(jk prob going to remove this line). There are so many great breweries out there that are so unique and awesome but don't get caught in people's radar, so I wanted to build an app to make curated lists of breweries based on the location. Looking forward to using the app with friends!
+Calling all beer enthusiasts! I came across [Open Brewery Database API](https://www.openbrewerydb.org/) and was reminded of the brewery crawls I did in Portland way back when I was chidlless and free(jk prob going to remove this line). There are so many great breweries out there that are so unique and awesome but don't often get caught in people's radar, so I wanted to build an app to make curated lists of breweries based on the users' location.
 
 
 ### Installation Instructions
@@ -106,6 +106,8 @@ Calling all beer enthusiasts! I came across [Open Brewery Database API](https://
 
 ### Difficulties
 -----
+Initially, I wanted this site to be more user-friendly and intuitive than what my current skill level can handle. I wanted it to feature several other features, such as drop down search option to sort brewery types, feature a map for each brewery, etc. I decided to focus more on hitting the MVPs and kept it simple in the end. I may revisit this project to apply the features later on when I have learned the skills. 
+
 
 
 ### Contact 

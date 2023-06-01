@@ -34,6 +34,7 @@ $searchForm.on("submit", event => {
     $('[name="city"]')[0].value = "";
 
  //// fetch using AJAX //////
+ //// The following code from line 39 to 50 were written in partnership with Susie Gordon. /////
   
     $.ajax({
         type: "GET",
@@ -47,8 +48,9 @@ $searchForm.on("submit", event => {
             console.log(item.name, item.brewery_type, item.city, item.state, item.website_url)
             
             list +=
-            `<li>
+            `<div class= "listContainer">
             <div class = "brewery-list">
+                <li>
                 <div>
                     <b>Name:&nbsp; </b> ${item.name}
                 </div>
@@ -64,8 +66,10 @@ $searchForm.on("submit", event => {
                 <div>
                     <b>Website:&nbsp; </b> ${item.website_url}
                 </div>
+                </li>
             </div>
-            </li>`;
+            </div>
+            `;
         };    
         $ul.html(list)
 
