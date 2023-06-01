@@ -108,7 +108,7 @@ button:hover {
     color: white;
 }
 
-.list-container {
+/* .list-container {
     width: 60%;
     background-color: white;
     border: 3px solid brown;
@@ -120,4 +120,19 @@ button:hover {
     background-color: black;
     width: 200px;
     height: 200px;
+    overflow: auto;
+} */
+
+.mainResult > ul {
+width: 500px;
+height: 400px;         
+margin: 2vw auto;           
+padding: 0 0 20px;
+display: inline-block;
+background: rgba(255,255,255,0.6);
+box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.8);
+border-radius: 10px;
+color: #878;
+overflow-x: hidden;
+overflow-y: auto;
 }

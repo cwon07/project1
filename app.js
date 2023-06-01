@@ -1,4 +1,4 @@
-//////// pop up window set up ////////
+//////// modal set up ////////
 
 window.addEventListener("load", function(){
     setTimeout(
@@ -28,52 +28,25 @@ $searchForm.on("submit", event => {
     // get the value from the generated data where the name value is "breweries" (on the form)
     // toLowerCase allows items to be searched regardless of alphabet casing
     const city = formData.get("city").toLowerCase();
-
     const $ul = $("ul.list")
-   
+
     // clears the search bar
     $('[name="city"]')[0].value = "";
 
-    ////// fetch using AJAX //////
-    // const addSquare = () => {
-    //     const square = document.createElement("div")
-    //     square.classList.add("square")
-    //     square.innerHTML =  `<li>
-    //     <div class = "brewery-list">
-    //         <div>
-    //             <b>Name:&nbsp; </b> ${item.name}
-    //         </div>
-    //         <div>
-    //             <b>Brewery Type:&nbsp; </b> ${item.brewery_type}
-    //         </div>
-    //         <div>
-    //             <b>City:&nbsp; </b> ${item.city}
-    //         </div>
-    //         <div>
-    //             <b>State:&nbsp; </b> ${item.state}
-    //         </div>
-    //         <div>
-    //             <b>Website:&nbsp; </b> ${item.website_url}
-    //         </div>
-    //     </div>
-    //     </li>`;
-    //     const container = document.querySelector(".list-container")
-    //     container.append(square)
-    // }
-    
+ //// fetch using AJAX //////
+  
     $.ajax({
         type: "GET",
         url: `https://api.openbrewerydb.org/v1/breweries?by_city=${city}&per_page=50`,
         })
         .then((data) => {
-            console.log(data.length)
-            // addSquare(data.length)
+            console.log(data.length);          
        let list = ""; 
-        for(let i = 0; i < data.length; i ++) {
-            const item = data[i]
+        for(let i = 0; i < data.length; i ++) {           
+            const item = data[i];
             console.log(item.name, item.brewery_type, item.city, item.state, item.website_url)
+            
             list +=
-
             `<li>
             <div class = "brewery-list">
                 <div>
@@ -93,18 +66,18 @@ $searchForm.on("submit", event => {
                 </div>
             </div>
             </li>`;
-        };          
-
+        };    
         $ul.html(list)
-        
-        
-        .catch(() => {
-            $ul.html(`<div> Unable to find results in the city...</div>`)
-        console.log(list);
-      
-        })
+
+  
+    //   .catch(() => {
+    //         $ul.html(`<div> Unable to find results in the city...</div>`)
+    //     console.log(list);      
+    //     })
+
+    
     })
-    });
+    })
         
     
 
