@@ -45,29 +45,29 @@ $searchForm.on("submit", event => {
        let list = ""; 
         for(let i = 0; i < data.length; i ++) {           
             const item = data[i];
-            console.log(item.name, item.brewery_type, item.city, item.state, item.website_url)
+            // console.log(item.name, item.brewery_type, item.city, item.state, item.website_url)
             
             list +=
             `<div class= "listContainer">
-            <div class = "brewery-list">
                 <li>
-                <div>
+                <div class= "breweryName">
                     <b>Name:&nbsp; </b> ${item.name}
                 </div>
-                <div>
+                <div class= "breweryType">
                     <b>Brewery Type:&nbsp; </b> ${item.brewery_type}
                 </div>
-                <div>
+                <div class= "breweryCity">
                     <b>City:&nbsp; </b> ${item.city}
                 </div>
-                <div>
+                <div class= "breweryState">
                     <b>State:&nbsp; </b> ${item.state}
                 </div>
-                <div>
+                <div class= "breweryWebsite">
                     <b>Website:&nbsp; </b> ${item.website_url}
+                        <a href=${item.website_url}>
+                            <span class="link"></span>
                 </div>
                 </li>
-            </div>
             </div>
             `;
         };    
@@ -85,6 +85,9 @@ $searchForm.on("submit", event => {
         
     
 
-     //// next steps - 1. figure out how to display more than 1 brewery at a time; use a scroll down function to display all results with a load more button
-    //// maybe try displaying the names only, enable click and once clicked the space on the right shows the details, (like having two columns) including the map 
-    /// figure out how to further filter the result by brewery type with a drop-down menu next to the main search bar; All, micro, nano, regional, brewpub
+    /// next steps 
+    /// 1. figure out how to display more than 1 brewery at a time DONE 
+    /// 2. use a scroll down function to display all results with a load more button DITCH
+    /// 3. maybe try displaying the names only, enable click and once clicked the space on the right shows the details, (like having two columns) including the map DITCH
+    /// 4. figure out how to further filter the result by brewery type with a drop-down menu next to the main search bar; All, micro, nano, regional, brewpub WILL TRY
+    /// 5. make the website url clickable DONE
