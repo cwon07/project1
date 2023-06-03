@@ -1,4 +1,4 @@
-# The Brewery Finder
+# Craft - The Brewery Finder
 
 > This is an application that allows users to find local breweries' information by location.
 
@@ -33,7 +33,6 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>Javascript</li>
-    <li>OpenStreetMatAPI</li>
 </ul>
 
 
@@ -44,6 +43,7 @@ Deployed to Render.com
 
 ### Code Examples
 -----
+ 
  $.ajax({
         type: "GET",
         url: `https://api.openbrewerydb.org/v1/breweries?by_city=${city}&per_page=50`,
