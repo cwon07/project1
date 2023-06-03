@@ -33,12 +33,13 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>Javascript</li>
+    <li>jQuery</li>
 </ul>
 
 
 ### Setup
 -----
-Deployed to Render.com
+Deployed to Render.com <br>
 [GitHub Repository](https://github.com/cwon07/project1)
 
 ### Code Examples
