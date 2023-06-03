@@ -86,8 +86,7 @@ Deployed to Render.com <br>
 -----
 <ul>
     <li>Find breweries by city
-    <li>Find breweries by type
-    <li>Access brewery information, such as address, business website, and Google Map directions
+    <li>Access brewery information, such as address, business type, city, state, and business website
     <li>Random brewery suggestion based on city 
 </ul>
 
