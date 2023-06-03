@@ -1,6 +1,6 @@
 # The Brewery Finder
 
-> This is an application that allows users to find local breweries by location and type, such as micro, regional, brewpub, etc.
+> This is an application that allows users to find local breweries' information by location.
 
 
 
@@ -11,10 +11,14 @@
     <li>Technologies</li>
     <li>Setup</li>
     <li>Code Examples</li>
+    <li>Screenshot</li>
     <li>Features</li>
     <li>Status</li>
     <li>To-Do</li>
     <li>Inspiration</li>
+    <li>Installation Instructions</li>
+    <li>Difficulties</li>
+    <li>Acknowledgements</li>
     <li>Contact</li>
 </ul>
 
@@ -71,11 +75,11 @@ Deployed to Render.com
                 </div>
             </div>
             </li>`;
-        };          
+        }});          
 
-### Status
------
-> This project is currently work in progress.
+### Screenshot
+![The screenshot of the site](./images/SiteScreenshot.png "Site Screenshot")
+
 
 ### Features
 -----
@@ -103,12 +107,16 @@ Calling all beer enthusiasts! I came across [Open Brewery Database API](https://
 
 ### Installation Instructions
 -----
+Simply fork and clone the repo! No other installation steps needed. 
 
-### Difficulties
+### Difficulties 
 -----
 Initially, I wanted this site to be more user-friendly and intuitive than what my current skill level can handle. I wanted it to feature several other features, such as drop down search option to sort brewery types, feature a map for each brewery, etc. I decided to focus more on hitting the MVPs and kept it simple in the end. I may revisit this project to apply the features later on when I have learned the skills. 
 
-
+### Acknowledgements
+-----
+[How to make an automatic popup window](https://foolishdeveloper.com/how-to-create-automatic-popup-window-using-html-css/)
+[How to get search results in boxes](https://stackoverflow.com/questions/63567537/how-to-get-search-results-in-different-boxes-in-html)
 
 ### Contact 
 -----
